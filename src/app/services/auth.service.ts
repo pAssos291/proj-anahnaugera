@@ -9,7 +9,7 @@ import { tap } from 'rxjs/operators';
 })
 export class AuthService {
   // A URL ngrok é volátil; idealmente, em produção, use a URL do Render.
-  private apiUrl = 'https://heterozygous-stephnie-oversweetly.ngrok-free.dev/api/auth'; 
+  private apiUrl = 'https://unextenuated-placative-charlize.ngrok-free.dev/api/auth'; 
 
   constructor(
     private http: HttpClient, 
