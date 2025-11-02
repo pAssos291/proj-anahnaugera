@@ -1,0 +1,40 @@
+<!-- Barra superior de aviso -->
+<div class="text-center text-white bg-custom py-2 small">
+  Cadastre-se para ganhar 15% de desconto. <a routerLink="cadastro" routerLinkActive="active" class="text-white fw-bold text-decoration-underline">Inscreva-se agora</a>
+</div>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+
+  <div class="container">
+    <a class="navbar-brand fw-bold me-5" href="#">Anhanguera dos piá</a>
+
+    <div>
+      <a routerLink="cursos" routerLinkActive="active" class="me-5 fw-bold">Cursos</a>
+      <a routerLink="cadastro-professor" routerLinkActive="active" class="me-5 fw-bold">Ensine conosco</a>
+      <a routerLink="sobre-nos" routerLinkActive="active" class="me-5 fw-bold">Sobre Nós</a>
+    </div>
+
+    <form class="d-flex flex-grow-1 ms-auto me-5 position-relative">
+        <i class="bi bi-search position-absolute" style="left: 10px; top: 50%; transform: translateY(-50%); color: black;"></i>
+        <input class="form-control ps-5" type="search" placeholder="Procure por cursos..." aria-label="Pesquisar cursos">
+    </form>
+
+    <div class="d-flex align-items-center">
+
+      <button class="btn position-relative me-3 p-0" (click)="goToCart()">
+          <i class="bi bi-basket3 fs-4"></i>
+          <span 
+            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+            *ngIf="(itemCount$ | async) as count">
+            {{ count }}
+            <span class="visually-hidden">itens no carrinho</span>
+          </span>
+      </button>
+
+      <a routerLink="login" routerLinkActive="active"><i class="bi bi-person-circle fs-4"></i></a>
+    </div>
+
+  </div>
+
+</nav>

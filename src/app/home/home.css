@@ -1,0 +1,9 @@
+.bg-custom{
+    background-color: #FF6600;
+}
+
+.btn-custom{
+    border-radius: 20px;
+    background-color: #2F4156;
+    color: white;
+}

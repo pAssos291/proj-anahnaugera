@@ -1,0 +1,60 @@
+import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import { AppRoutingModule } from './app-routing-module';
+import { App } from './app';
+import { NgbModule, NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { Home } from './home/home';
+import { MenuSuperior } from './menu-superior/menu-superior';
+import { Rodape } from './rodape/rodape';
+import { FormCurso } from './form-curso/form-curso';
+import { Avaliacoes } from './avaliacoes/avaliacoes';
+import { Login } from './login/login';
+import { Cadastro } from './cadastro/cadastro';
+import { EsqueciSenha } from './esqueci-senha/esqueci-senha';
+import { Dashboard } from './dashboard/dashboard';
+import { CursosCard } from './cursos-card/cursos-card';
+import { CursosPagina } from './cursos-pagina/cursos-pagina';
+import { Carrinho } from './carrinho/carrinho';
+import { SobreNos } from './sobre-nos/sobre-nos';
+import { CadastroProfessor } from './cadastro-professor/cadastro-professor';
+import { ResetPassword } from './reset-password/reset-password';
+
+@NgModule({
+  declarations: [
+    App,
+    Home,
+    MenuSuperior,
+    Rodape,
+    FormCurso,
+    Avaliacoes,
+    Login,
+    Cadastro,
+    EsqueciSenha,
+    Dashboard,
+    CursosCard,
+    CursosPagina,
+    Carrinho,
+    SobreNos,
+    CadastroProfessor,
+    ResetPassword
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    NgbCarouselModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
+
+  ],
+  providers: [
+    provideBrowserGlobalErrorListeners()
+  ],
+  bootstrap: [App]
+})
+export class AppModule { }
